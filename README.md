@@ -52,6 +52,8 @@ Leakage was the single biggest risk, so it got a dedicated audit.
 
 A missed delay costs far more than a false alarm, on the order of 10 to 30 times, so the work optimized for **F2 and recall** rather than accuracy. All figures below are on the blind test set (Q4 2021, 1.64M flights).
 
+![Model comparison by F2, and the effect of shifting the decision threshold from 0.5 to 0.4 on recall and F2](images/results-summary.png)
+
 | Model | F2 | Recall | Precision | AUC-PR |
 |---|---|---|---|---|
 | **Logistic Regression** (threshold 0.4) | **0.541** | **0.836** | 0.224 | 0.265 |
